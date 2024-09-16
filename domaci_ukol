@@ -1,0 +1,37 @@
+mesta = ["Praha", "Viden", "Olomouc", "Svitavy", "Zlin", "Ostrava"]
+ceny = (150, 200, 120, 120, 100, 180)
+cara = "=" * 35
+nabidka = """1 - Praha   | 150
+2 - Viden   | 200
+3 - Olomouc | 120
+4 - Svitavy | 120
+5 - Zlin    | 100
+6 - Ostrava | 180"""
+nazev = "VITEJTE U NASI APLIKACI DESTINATIO!"
+delka_nazvu = len(nazev)
+
+
+print(nazev)
+print("=" * delka_nazvu)
+print(nabidka)
+print("=" * delka_nazvu)
+destinace = input("CISLO DESTINACE:")
+jmeno = input("JMENO:")
+prijmeni = input("PRIJMENI:")
+email = input("EMAIL:")
+print("=" * delka_nazvu)
+
+spravna_destinace = mesta[int(destinace) - 1]
+cena = ceny[int(destinace) - 1]
+print("=" * delka_nazvu)
+
+print("DEKUJI,", jmeno, "ZA OBJEDNAVKU,")
+print("CIL. DESTINACE:", spravna_destinace, ",", "CENA JIZDNEHO:", cena, ",")
+print("NA TVUJ EMAIL", email, "JSME TI POSLALI LISTEK.")
+print("=" * delka_nazvu)
+
+
+
+
+
+
